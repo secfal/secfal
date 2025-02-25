@@ -1,0 +1,120 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/g1.jpg'); /* Путь к вашему изображению */
+    background-size: cover; /* Масштабирование изображения */
+    background-attachment: fixed; /* Фиксация фона при прокрутке */
+    background-position: center; /* Центрирование фона */
+    color: #333;
+}
+
+/* Заголовок */
+header {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    position: relative;
+}
+
+.header-logo {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 300px;
+    height: 100px;
+}
+
+.site-title {
+    position: absolute;
+    top: 55px;
+    left: 30px;
+    font-size: 12px;
+    color: white;
+}
+/* Навигация */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, font-size 0.3s; /* Плавный переход при наведении */
+}
+
+nav ul li a:hover {
+    color: #ff6347; /* Изменение цвета при наведении */
+    font-size: 18px; /* Изменение размера шрифта при наведении */
+}
+
+/* Основной блок с шагами */
+.step-container {
+    display: flex;
+    flex-wrap: wrap; /* Адаптация для мобильных устройств */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+	
+}
+
+.step-block {
+    background-color: rgba(255, 255, 255, 0.8); /* Прозрачный белый фон */
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Тень для визуального выделения */
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 calc(30% - 20px); /* Каждый блок занимает 30% ширины */
+    max-width: 650px;
+    min-width: 250px;
+    text-align: center;
+}
+
+.step-block h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.step-block p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Футер */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+.step-block {
+            background: rgba(255, 255, 255, 0.8); /* Белый фон с прозрачностью */
+            border-radius: 10px; /* Закругление углов */
+            padding: 20px;
+            width: 80%; /* Ширина блока */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Тень */
+            position: relative; /* Для возможных наложений */
+        }
+
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.5); /* Прозрачный фон для футера */
+        }
